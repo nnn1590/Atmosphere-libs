@@ -120,7 +120,7 @@ $(ATMOSPHERE_BUILD_DIR)/%:
 #---------------------------------------------------------------------------------
 clean:
 	@echo clean ...
-	@rm -fr $(ATMOSPHERE_BUILD_DIR) $(ATMOSPHERE_LIBRARY_DIR) *.bz2 $(ALL_GCH_FILES)
+	@rm -fr $(ATMOSPHERE_BUILD_DIR) $(ATMOSPHERE_LIBRARY_DIR) *.bz2 include/*.gch $(ALL_GCH_FILES)
 	@for i in $(GCH_DIRS); do [ -d $$i ] && rmdir --ignore-fail-on-non-empty $$i || true; done
 
 #---------------------------------------------------------------------------------
